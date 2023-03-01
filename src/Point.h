@@ -23,7 +23,7 @@ typedef struct
 Point MakePoint(float X, float Y, float Z);
 /* Membentuk sebuah Point dari komponen-komponennya */
 /* *** Konstruktor membentuk Point dengan komponen yang dibangkitkan secara acak *** */
-Point MakeRandomPoint();
+Point MakeRandomPoint(void);
 
 /* *** KELOMPOK Interaksi dengan I/O device, BACA/TULIS  *** */
 void PrintPoint(Point P);
@@ -38,5 +38,13 @@ void PrintPoint(Point P);
 /* *** KELOMPOK OPERASI LAIN TERHADAP TYPE *** */
 float Distance(Point P1, Point P2);
 /* Menghitung jarak antara dua titik dengan rumus Euclidean */
+
+/* *** Kelompok operasi relasional terhadap POINT *** */
+boolean Equal(Point P1, Point P2);
+/* Mengirimkan true jika P1 = P2 : absis, ordinat, aplikatnya sama */
+
+/* *** Operasi tambahan *** */
+float ABS(float a, float b);
+/* Mengembalikan nilai mutlak dari selisih dua bilangan real */
 
 #endif
