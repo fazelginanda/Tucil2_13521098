@@ -11,6 +11,11 @@ int main()
     do
     {
         scanf("%d", &n);
+        if (n < 2)
+        {
+            printf("Masukan salah. Titik minimal sebanyak 2. Ulangi!\n");
+            printf("Masukkan banyak titik (n): ");
+        }
     } while (n < 2);
 
     ListPoint l;
@@ -29,14 +34,17 @@ int main()
     timeBF = ((double)(endBF - startBF)) / CLOCKS_PER_SEC;
 
     printf("\n");
-    printf("Hasil pencarian titik terdekat berdasarkan algoritma brute force:\n");
+    printf("Hasil pencarian pasangan titik terdekat berdasarkan algoritma brute force:\n");
     printf("1. Pasangan titik\n");
+    printf("   ");
     printf("Titik pertama: ");
     PrintPoint(p1BF);
     printf("\n");
+    printf("   ");
     printf("Titik kedua: ");
     PrintPoint(p2BF);
     printf("\n");
+    printf("   ");
     printf("Jarak pasangan titik terdekat: %f\n", minBF);
     printf("2. Banyak perhitungan rumus Euclidean: %d\n", countBF);
     printf("3. Waktu riil: %f\n", timeBF);
@@ -55,14 +63,17 @@ int main()
     timeDC = ((double)(endDC - startDC)) / CLOCKS_PER_SEC;
 
     printf("\n");
-    printf("Hasil pencarian titik terdekat berdasarkan algoritma divide and conquer:\n");
+    printf("Hasil pencarian pasangan titik terdekat berdasarkan algoritma divide and conquer:\n");
     printf("1. Pasangan titik terdekat dan jaraknya\n");
+    printf("   ");
     printf("Titik pertama: ");
     PrintPoint(p1DC);
     printf("\n");
+    printf("   ");
     printf("Titik kedua: ");
     PrintPoint(p2DC);
     printf("\n");
+    printf("   ");
     printf("Jarak pasangan titik terdekat: %f\n", minDC);
     printf("2. Banyak perhitungan rumus Euclidean: %d\n", countDC);
     printf("3. Waktu riil: %f\n", timeDC);

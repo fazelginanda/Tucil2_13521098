@@ -31,14 +31,6 @@ Point MakeRandomPoint(void)
     return p;
 }
 
-/* *** KELOMPOK Interaksi dengan I/O device, BACA/TULIS  *** */
-void PrintPoint(Point P)
-{
-    /*KAMUS*/
-    /* ALGORITMA */
-    printf("(%.3f,%.3f,%.3f)", Absis(P), Ordinat(P), Aplikat(P));
-}
-
 /* *** KELOMPOK OPERASI LAIN TERHADAP TYPE *** */
 float Distance(Point P1, Point P2)
 {

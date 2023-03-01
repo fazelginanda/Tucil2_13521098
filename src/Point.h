@@ -25,16 +25,6 @@ Point MakePoint(float X, float Y, float Z);
 /* *** Konstruktor membentuk Point dengan komponen yang dibangkitkan secara acak *** */
 Point MakeRandomPoint(void);
 
-/* *** KELOMPOK Interaksi dengan I/O device, BACA/TULIS  *** */
-void PrintPoint(Point P);
-/* Nilai P ditulis ke layar dengan format "(X,Y)"
-   tanpa spasi, enter, atau karakter lain di depan, belakang,
-   atau di antaranya
-   Output X dan Y harus dituliskan dalam bilangan riil dengan 2 angka di belakang koma.
-*/
-/* I.S. P terdefinisi */
-/* F.S. P tertulis di layar dengan format "(X,Y)" */
-
 /* *** KELOMPOK OPERASI LAIN TERHADAP TYPE *** */
 float Distance(Point P1, Point P2);
 /* Menghitung jarak antara dua titik dengan rumus Euclidean */

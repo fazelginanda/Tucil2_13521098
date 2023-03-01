@@ -1,5 +1,5 @@
 /* File: ListPoint.c*/
-/* Deskripsi: Implementasi dari ListPoint.h */
+/* Deskripsi: Implementasi ListPoint.h */
 
 #include <stdio.h>
 #include "ListPoint.h"
@@ -68,32 +68,6 @@ boolean isFull(ListPoint l)
     /* KAMUS LOKAL */
     /* ALGORITMA */
     return (length(l) == 1000);
-}
-
-/* ********** TULIS dengan INPUT/OUTPUT device ********** */
-/* *** Mendefinisikan isi List dari pembacaan *** */
-void displayList(ListPoint l)
-{
-    /* KAMUS LOKAL */
-    int i;
-    /* ALGORITMA */
-    if (isEmpty(l))
-    {
-        printf("[]");
-    }
-    else
-    {
-        printf("[");
-        for (i = 0; i < length(l); i++)
-        {
-            if (i != 0)
-            {
-                printf(",");
-            }
-            PrintPoint(ELMT(l, i));
-        }
-        printf("]");
-    }
 }
 
 /* ********** SORTING ********** */
